@@ -1,0 +1,1998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5024d817-79d7-43ab-a074-20fce525fd8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{dd6679d9-06f7-4cb3-b425-03c3bbc86b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calendar">
+      <UniqueIdentifier>{4437039e-16f2-4032-bd9c-7b514e8a6a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chart">
+      <UniqueIdentifier>{659e6181-9457-41fd-9faf-f52ac3921236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gantt">
+      <UniqueIdentifier>{86f2f686-f1ad-471a-aeaa-ab33a32ebeeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gauge">
+      <UniqueIdentifier>{93eb6a13-8681-4818-83e9-0efad9610cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics Managers">
+      <UniqueIdentifier>{ba00fbac-a652-4355-8999-4bfdd9b9e5e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ribbon">
+      <UniqueIdentifier>{25acd8f5-b5ea-4f08-8d60-065c11e8a677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visual Container">
+      <UniqueIdentifier>{455f4004-f827-4965-a654-3f3f6a7b4b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visual Managers">
+      <UniqueIdentifier>{56490e3b-ab83-4445-a682-5da75683042e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{3a17125c-1c8b-4cc9-91f6-234b2a89448d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Lpng">
+      <UniqueIdentifier>{0653de50-1d08-45a8-8713-68d2fe810be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Zlib">
+      <UniqueIdentifier>{3c7bfb40-ea2b-4024-8db1-95b9b6a0f4e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Zlib\adler32.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAppBarWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bcgglobals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAnimCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAppointment.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAppointmentDS.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAppointmentProperty.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAppointmentStorage.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAutoHideButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAutoHideDockBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPAutoHideToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBarContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBarContainerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBaseControlBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBaseInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBaseRibbonElement.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBaseTabbedBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBaseTabWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBaseToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBreadcrumb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPBreadcrumbControlImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCalendarBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCalendarMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCaptionBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCaptionButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCaptionMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartAxis.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartCtrl.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartFormat.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartImpl.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartLegend.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartSeries.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartView.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartVisualObject.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCircularGaugeImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPColorIndicatorImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPColorBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPColorButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPColorDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPColorMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCommandManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPContextMenuManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPControlBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPControlBarImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPControlRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPCustomizeMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDAOGridCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDateTimeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDBGridCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDialogBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDlgImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDockBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDockBarRow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDockingCBWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDockingControlBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDockManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDragFrameImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDrawManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDropDown.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDropDownList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPDurationCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPEditCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPEditListBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPFrameImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPEditView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPExCheckList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPExplorerToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPFontComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPFormView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPFullScreenImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttChart.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttControl.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttGrid.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttItem.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttItemStorage.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttRenderer.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGanttView.cpp">
+      <Filter>Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGaugeImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGraphicsManager.cpp">
+      <Filter>Graphics Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGraphicsManagerD2D.cpp">
+      <Filter>Graphics Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGraphicsManagerGDI.cpp">
+      <Filter>Graphics Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGlobalUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGridCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGridSerialize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGridView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPHeaderCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPHotSpotImageCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPImageEditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPImageGaugeImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPInplaceEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPInplaceToolTipCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPIntelliSenseLB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPIntelliSenseWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPKeyboardManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPKeyboardPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPKeyHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPKeyMapDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPListBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPLocalRes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMainClientAreaWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMaskEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMDIChildWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMDIFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMenuBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMenuPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMessageBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMiniFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMouseManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMousePage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPMultiMiniFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPNumericIndicatorImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPODBCGridCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOleCntrFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOleDocIPFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOleIPFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOleServerDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOptionsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOutlineParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOutlookBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOutlookBarDockingPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOutlookBarPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOutlookButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPOutlookWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerClockIcons.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerDropSource.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerDropTarget.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerManagerCtrl.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerManagerView.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerPrint.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerPrintDay.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerPrintDual.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerPrintMonth.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerPrintWeek.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerView.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerViewDay.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerViewMonth.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerViewMulti.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerViewWeek.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPlannerViewWorkWeek.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPngImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPopupDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPopupMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPopupMenuBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPopupWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPowerColorPicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPrintPreviewCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPrintPreviewView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPProgressCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPProgressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPropertyPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPropertySheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPPropList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPReBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRebarState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRecentDockInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRecurrence.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRecurrenceRule.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRecurrenceRules.cpp">
+      <Filter>Calendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPReportCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPReportView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonBackstagePagePrint.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonBackstageView.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonBackstageViewPanel.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonBar.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonButton.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonButtonsGroup.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonCategory.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonCheckBox.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonCollector.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonColorButton.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonComboBox.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonCommandsListBox.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonConstructor.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonCustomizePage.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonDialogBar.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonEdit.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonElementHostCtrl.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonFloaty.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonHyperlink.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonInfo.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonInfoLoader.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonInfoWriter.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonKeyboardCustomizeDlg.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonKeyTip.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonLabel.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonMainPanel.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonPaletteButton.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonPanel.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonPanelMenu.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonProgressBar.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonQuickAccessToolbar.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonSlider.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonStatusBar.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonStatusBarPane.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPRibbonUndoButton.cpp">
+      <Filter>Ribbon</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPScrollBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSDPlaceMarkerWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSelectSkinDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPShellBreadcrumb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPShellList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPShellManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPShellTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPShowAllButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSkinManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSliderCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSmartDockingManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSmartDockingMarker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSpinButtonCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPSplitterWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPStatic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPStaticGaugeImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPStatusBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTabbedControlBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTabbedToolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTabView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTabWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTagManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTaskPaneMiniFrameWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTasksPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTearOffManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTextGaugeImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarComboBoxButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarCustomize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarCustomizePages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarDateTimeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarDropSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarDropTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarEditBoxButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarFontCombo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolBarImages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarMenuButtonsButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarSpinEditBoxButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolbarSystemMenuButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolsPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPToolTipCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPTooltipManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPURLLinkButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPUserTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPUserToolsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualCollector.cpp">
+      <Filter>Visual Container</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualConstructor.cpp">
+      <Filter>Visual Container</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualContainer.cpp">
+      <Filter>Visual Container</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualCtrl.cpp">
+      <Filter>Visual Container</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualInfo.cpp">
+      <Filter>Visual Container</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManager.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManager2003.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManager2007.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManager2010.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManagerCarbon.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManagerScenic.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManagerVS2005.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManagerVS2008.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManagerVS2010.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPVisualManagerXP.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPWinXPVisualManager.cpp">
+      <Filter>Visual Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPWindowsManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPWorkspace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonAppearanceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonsList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonsTextList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalendarPopup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdUsageCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorPage1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorPage2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorPopup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomizeButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagePaintArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyAssign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuImages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertySheetCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolbarNameDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackMouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\crc32.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\deflate.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\compress.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\inffast.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\inflate.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\inftrees.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\png.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngwutil.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngerror.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pnggccrd.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngget.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngmem.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngpread.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngread.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngrio.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngrtran.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngrutil.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngset.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngtest.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngtrans.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngvcrd.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngwio.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngwrite.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="Lpng\pngwtran.c">
+      <Filter>Utilities\Lpng</Filter>
+    </ClCompile>
+    <ClCompile Include="RegPath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\trees.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Zlib\zutil.c">
+      <Filter>Utilities\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPImageProcessing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartFormula.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPChartObject.cpp">
+      <Filter>Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="BCGPLinearGaugeImpl.cpp">
+      <Filter>Gauge</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BCGCBPro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGCBProConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGCBProInc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGCBProVer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bcgglobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAccessibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPADOGridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAnimCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAppBarWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAppointmentStorage.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAppointment.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAppointmentDS.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAppointmentProperty.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAutoHideButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBaseInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAutoHideDockBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPAutoHideToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBarContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBarContainerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBaseControlBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBaseRibbonElement.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBaseTabbedBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCaptionMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBaseTabWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBaseToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBreadcrumb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPBreadcrumbControlImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCalendarBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCalendarMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCaptionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCaptionButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartVisualObject.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartAxis.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartCtrl.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartFormat.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartImpl.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartLegend.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartSeries.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartView.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCircularGaugeImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPColorIndicatorImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPColorBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCustomizeMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPColorButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPColorDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPColorMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPCommandManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPContextMenuManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPControlBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPControlBarImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPControlRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPD2DDefs.h">
+      <Filter>Graphics Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDAOGridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPEditCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDateTimeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDBGridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDialogBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDlgImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDockBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDockBarRow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDockingCBWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDockingControlBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDockManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDragFrameImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDrawManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDropDown.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDropDownList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPDurationCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPEditListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPEditView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPExCheckList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPExplorerToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPFileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPFontComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPFormView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPFrameImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPFullScreenImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttView.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttChart.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttControl.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttGrid.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttItem.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttItemStorage.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGanttRenderer.h">
+      <Filter>Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGaugeImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGraphicsManagerGDI.h">
+      <Filter>Graphics Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGraphicsManager.h">
+      <Filter>Graphics Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGraphicsManagerD2D.h">
+      <Filter>Graphics Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGlobalUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGridSerialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPGridView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPHelpids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPHeaderCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPHotSpotImageCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPImageEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPImageGaugeImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPInplaceEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMultiMiniFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPInplaceToolTipCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPIntelliSenseLB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPIntelliSenseWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPKeyboardManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPKeyboardPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPKeyHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPKeyMapDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPLocalResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMainClientAreaWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMaskEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMDIChildWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMDIFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMenuBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMenuPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMessageBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMiniFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMouseManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMousePage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPMultiDocTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPNumericIndicatorImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPODBCGridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOutlookWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOleCntrFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOleDocIPFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOleIPFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOleServerDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOptionsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOutlineParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOutlookBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOutlookBarDockingPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOutlookBarPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPOutlookButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerViewWorkWeek.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerClockIcons.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerDropSource.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerDropTarget.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerManagerCtrl.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerManagerView.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerPrint.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerPrintDay.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerPrintDual.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerPrintMonth.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerPrintWeek.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerView.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerViewDay.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerViewMonth.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerViewMulti.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPlannerViewWeek.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRecurrenceRules.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRecurrence.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRecurrenceRule.h">
+      <Filter>Calendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPngImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPReportView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPopupDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPopupMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPopupMenuBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPopupWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPowerColorPicker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPrintPreviewCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPrintPreviewView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPProgressCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPProgressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPropertyPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPropertySheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPPropList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPReBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRebarState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRecentDockInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPReportCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonUndoButton.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonBackstagePagePrint.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonBackstageView.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonBackstageViewPanel.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonBar.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonButton.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonButtonsGroup.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonCategory.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonCheckBox.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonCollector.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonColorButton.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonComboBox.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonCommandsListBox.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonConstructor.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonCustomizePage.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonDialogBar.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonEdit.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonElementHostCtrl.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonFloaty.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonHyperlink.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonInfo.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonInfoLoader.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonInfoWriter.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonKeyboardCustomizeDlg.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonKeyTip.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonLabel.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonMainPanel.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonPaletteButton.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonPanel.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonPanelMenu.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonProgressBar.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonQuickAccessToolbar.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonSlider.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonStatusBar.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPRibbonStatusBarPane.h">
+      <Filter>Ribbon</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGProMigrate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bcgprores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPStaticGaugeImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPScrollBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTearOffManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSDPlaceMarkerWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSelectSkinDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPShellBreadcrumb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPShellList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPShellManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPShellTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPShowAllButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSkinEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSkinManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSliderCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSmartDockingManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSmartDockingMarker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSpinButtonCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPSplitterWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPStatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bcgpstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTabbedControlBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTabbedToolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTabView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTabWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTagManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTaskPaneMiniFrameWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTasksPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTextGaugeImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPUserToolsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarComboBoxButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarCustomize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarCustomizePages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarDateTimeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarDropSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarDropTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarEditBoxButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarFontCombo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolBarImages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarMenuButtonsButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarSpinEditBoxButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolbarSystemMenuButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolsPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPToolTipCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPTooltipManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPURLLinkButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPUserTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualInfo.h">
+      <Filter>Visual Container</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualCollector.h">
+      <Filter>Visual Container</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualConstructor.h">
+      <Filter>Visual Container</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualContainer.h">
+      <Filter>Visual Container</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualCtrl.h">
+      <Filter>Visual Container</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPWinXPVisualManager.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManager.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManager2003.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManager2007.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManager2010.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManagerCarbon.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManagerScenic.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManagerVS2005.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManagerVS2008.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManagerVS2010.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPVisualManagerXP.h">
+      <Filter>Visual Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPWindowsManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorPopup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPWorkspace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonAppearanceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonsList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonsTextList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalendarPopup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdUsageCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorPage1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorPage2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomizeButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagePaintArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertySheetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolbarNameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackMouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\crc32.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\deflate.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\inftrees.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\inffast.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\inffixed.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\inflate.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyAssign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuImages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lpng\png.h">
+      <Filter>Utilities\Lpng</Filter>
+    </ClInclude>
+    <ClInclude Include="Lpng\pngconf.h">
+      <Filter>Utilities\Lpng</Filter>
+    </ClInclude>
+    <ClInclude Include="RegPath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\zutil.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\trees.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\zconf.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Zlib\zlib.h">
+      <Filter>Utilities\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPImageProcessing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartFormula.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPChartObject.h">
+      <Filter>Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="BCGPLinearGaugeImpl.h">
+      <Filter>Gauge</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
