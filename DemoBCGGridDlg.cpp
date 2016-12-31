@@ -4,13 +4,17 @@
 #include "stdafx.h"
 #include "DemoBCGGrid.h"
 #include "DemoBCGGridDlg.h"
-
+#include "YahooQuote.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #undef THIS_FILE
 static char THIS_FILE[] = __FILE__;
 #endif
-
+void AddDate(CXTPChartSeries* pSeries, LPCTSTR arg, double low, double high, double open, double close)//
+{
+	CXTPChartSeriesPoint* pPoint;	
+	pPoint = pSeries->GetPoints()->Add(new CXTPChartSeriesPoint(arg, low, high, open, close));//	
+};
 /////////////////////////////////////////////////////////////////////////////
 // CDemoBCGGridDlg dialog
 
@@ -30,6 +34,7 @@ void CDemoBCGGridDlg::DoDataExchange(CDataExchange* pDX)
 	//{{AFX_DATA_MAP(CDemoBCGGridDlg)
 	DDX_Control(pDX, IDC_PLACEHOLDER, m_wndPlaceHolder);
 	DDX_Control(pDX, IDC_BCGCHART, m_wndChart);
+	DDX_Control(pDX, IDC_TOOLKITCHART, m_wndToolKitChart);
 	DDX_Control(pDX, IDC_GRID_RECT, m_wndGridLocation);
 	//}}AFX_DATA_MAP
 }
@@ -55,7 +60,9 @@ BOOL CDemoBCGGridDlg::OnInitDialog()
 	//CreateGridXTP();
 	//CreateGrid();
 	// TODO: Add extra initialization here
-	CreateChart();
+	//CreateChart();
+	//CreateToolKitChart();
+	UpdateHistory();
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
@@ -307,4 +314,439 @@ void CDemoBCGGridDlg::CreateChart()
 	pChart->Redraw();
 	//const BCGPChartFormatSeries* pSerFormat = pSerie->GetDataPointFormat(1000,1);
 	//const BCGPChartFormatDataLabel aaa=pSerFormat->m_dataLabelFormat;
+}
+
+void CDemoBCGGridDlg::CreateToolKitChart()
+{
+	m_ToolKitChart.Attach(m_wndToolKitChart.GetSafeHwnd());
+	// set chart title.
+	//m_ToolKitChart.GetContent()->SetBackgroundColor(CXTPChartColor::Gray);
+	CXTPChartTitleCollection* pTitles = m_ToolKitChart.GetContent()->GetTitles();
+	CXTPChartTitle* pTitle = pTitles->Add(new CXTPChartTitle());
+	pTitle->SetText(_T("Historical Stock Prices"));
+	pTitle->SetTextColor(CXTPChartColor::White);
+
+	// set chart subtitle.
+	CXTPChartTitle* pSubTitle = pTitles->Add(new CXTPChartTitle());
+	pSubTitle->SetText(_T("www.codejock.com"));
+	pSubTitle->SetDocking(xtpChartDockBottom);
+	pSubTitle->SetAlignment(xtpChartAlignFar);
+	pSubTitle->SetFont(CXTPChartFont::GetTahoma8());
+	pSubTitle->SetTextColor(CXTPChartColor::White);
+
+	/*CXTPChartContent* pContent = m_ToolKitChart.GetContent();
+		CXTPChartSeriesCollection* pCollection = pContent->GetSeries();
+		if (pCollection)
+		{
+			CXTPChartSeries* pSeries = pCollection->Add(new CXTPChartSeries());
+			if (pSeries)
+			{
+				CXTPChartSeriesPointCollection* pPoints = pSeries->GetPoints();
+				if (pPoints)
+				{
+					pPoints->Add(new CXTPChartSeriesPoint(0, 0.5));
+					pPoints->Add(new CXTPChartSeriesPoint(1, 2));
+					pPoints->Add(new CXTPChartSeriesPoint(2, 1));
+					pPoints->Add(new CXTPChartSeriesPoint(3, 1.5));
+				}
+
+				// ----------------------------------------------------------
+				// SET THE CHART SERIES STYLE
+				// ----------------------------------------------------------
+				// You can call SetStyle to set the chart style such as bar, 
+				// line or area chart. Here we set the style to line chart by 
+				// instantiating a CXTPChartLineSeriesStyle object.
+
+				pSeries->SetStyle(new CXTPChartLineSeriesStyle());
+				CXTPChartDiagram2D* pDiagram = (CXTPChartDiagram2D*)pSeries->GetDiagram();
+				
+				pDiagram->GetAxisY()->GetGridLines()->SetMinorVisible(TRUE);
+				pDiagram->GetAxisY()->GetGridLines()->GetMinorLineStyle()->SetDashStyle(xtpChartDashStyleDot);
+				
+				pDiagram->GetAxisY()->GetTitle()->SetText(_T("US Dollars"));
+				pDiagram->GetAxisY()->GetTitle()->SetVisible(TRUE);
+				pDiagram->GetAxisY()->SetColor(CXTPChartColor::White);
+				pDiagram->GetAxisY()->GetTitle()->SetTextColor(CXTPChartColor::White);
+				pDiagram->GetAxisY()->GetLabel()->SetTextColor(CXTPChartColor::White);
+
+				pDiagram->GetAxisY()->GetRange()->SetShowZeroLevel(TRUE);
+				
+				pDiagram->GetAxisX()->GetLabel()->SetAngle(360-30);
+				pDiagram->GetAxisX()->GetLabel()->SetAntialiasing(TRUE);
+				pDiagram->GetAxisX()->SetColor(CXTPChartColor::White);
+				pDiagram->GetAxisX()->GetLabel()->SetTextColor(CXTPChartColor::White);
+				pDiagram->GetAxisX()->GetTitle()->SetTextColor(CXTPChartColor::White);
+				pDiagram->GetAxisX()->GetLabel()->SetVisible(TRUE);
+				pDiagram->GetAxisX()->GetCustomLabels()->RemoveAll();
+
+			}
+		}*/
+
+	//pSeries->SetArgumentScaleType(xtpChartScaleQualitative);
+		// turn off legend.
+	/*m_ToolKitChart.GetContent()->GetLegend()->SetVisible(FALSE);
+	CXTPChartSeries* pSeries = m_ToolKitChart.GetContent()->GetSeries()->Add(new CXTPChartSeries());
+    CXTPChartFastLineSeriesStyle* pStyle = (CXTPChartFastLineSeriesStyle*)pSeries->SetStyle(new CXTPChartFastLineSeriesStyle());
+	//pStyle->SetLineThickness(1);
+	CXTPChartDiagram2D* pDiagram = (CXTPChartDiagram2D*)pSeries->GetDiagram();
+	
+	pDiagram->GetAxisY()->GetGridLines()->SetMinorVisible(TRUE);
+	pDiagram->GetAxisY()->GetGridLines()->GetMinorLineStyle()->SetDashStyle(xtpChartDashStyleDot);
+	
+	pDiagram->GetAxisY()->GetTitle()->SetText(_T("US Dollars"));
+	pDiagram->GetAxisY()->GetTitle()->SetVisible(TRUE);
+
+	pDiagram->GetAxisY()->GetRange()->SetShowZeroLevel(FALSE);
+	
+	pDiagram->GetAxisX()->GetLabel()->SetAngle(360-30);
+	pDiagram->GetAxisX()->GetLabel()->SetAntialiasing(TRUE);
+
+
+	//pSeries->SetArgumentScaleType(xtpChartScaleQualitative);
+	pDiagram->GetAxisX()->GetLabel()->SetVisible(TRUE);
+	pDiagram->GetAxisX()->GetCustomLabels()->RemoveAll();
+	AddDate(pSeries,"1",1);
+	return;*/
+
+
+	m_ToolKitChart.GetContent()->GetSeries()->RemoveAll();
+
+	CXTPChartSeries* pSeries = m_ToolKitChart.GetContent()->GetSeries()->Add(new CXTPChartSeries());
+	//pSeries->SetArgumentScaleType(xtpChartScaleDateTime);
+	//Color(CXTPChartColor::White);
+	CTime timeEnd = CTime::GetCurrentTime();
+
+	CTime timeStart = timeEnd;
+	int nDays=90;
+	CString lpszSymbol="sohu";
+	timeStart -= CTimeSpan(nDays,0,0,0);
+	
+	CYahooQuote	quote;
+	CStringArray& arrQuote = quote.GetHistory(lpszSymbol, timeStart, timeEnd);
+
+	
+    CXTPChartHighLowSeriesStyle* pStyle = NULL;
+    int bCandleStick=1;
+    if (bCandleStick)
+    {
+        pStyle = (CXTPChartHighLowSeriesStyle*)pSeries->SetStyle(new CXTPChartCandleStickSeriesStyle());
+    }
+    else
+    {
+        pStyle = (CXTPChartHighLowSeriesStyle*)pSeries->SetStyle(new CXTPChartHighLowSeriesStyle());
+    }
+    int m_bThickLine=1;
+	pStyle->SetLineThickness(m_bThickLine ? 2 : 1);
+	int m_bCandleStick = bCandleStick;
+	
+	CXTPChartDiagram2D* pDiagram = (CXTPChartDiagram2D*)pSeries->GetDiagram();
+	
+	pDiagram->GetAxisY()->GetGridLines()->SetMinorVisible(TRUE);
+	pDiagram->GetAxisY()->GetGridLines()->GetMinorLineStyle()->SetDashStyle(xtpChartDashStyleDot);
+	//pDiagram->GetAxisY()->GetGridLines()->SetGridColor(CXTPChartColor::White);
+	pDiagram->GetAxisY()->GetTitle()->SetText(_T("US Dollars"));
+	pDiagram->GetAxisY()->GetTitle()->SetVisible(TRUE);
+	pDiagram->GetAxisY()->SetColor(CXTPChartColor::White);
+	pDiagram->GetAxisY()->GetTitle()->SetTextColor(CXTPChartColor::White);
+	pDiagram->GetAxisY()->GetLabel()->SetTextColor(CXTPChartColor::White);
+
+	pDiagram->GetAxisY()->GetRange()->SetShowZeroLevel(FALSE);
+	
+	pDiagram->GetAxisX()->GetLabel()->SetAngle(360-30);
+	pDiagram->GetAxisX()->GetLabel()->SetAntialiasing(TRUE);
+	pDiagram->GetAxisX()->SetColor(CXTPChartColor::White);
+	pDiagram->GetAxisX()->GetTitle()->SetTextColor(CXTPChartColor::White);
+	pDiagram->GetAxisX()->GetLabel()->SetTextColor(CXTPChartColor::White);
+
+
+	pSeries->SetArgumentScaleType(xtpChartScaleQualitative);
+	pDiagram->GetAxisX()->GetLabel()->SetVisible(TRUE);
+
+
+	pDiagram->GetAxisX()->GetCustomLabels()->RemoveAll();
+
+	CXTPChartSeriesPointCollection* pPoints = pSeries->GetPoints();
+	for (int i = 20 - 1; i > 0; --i)
+	{
+		CString str="";
+		str.Format("a-%d",i);
+		pPoints->Add(new CXTPChartSeriesPoint(str, rand()%20));
+		/*AddDate(pSeries,
+			str,
+			rand()%20,
+			rand()%20,
+			rand()%20,
+			rand()%20);*/
+
+		
+		/*if ((i % 2) == 0)
+		{
+			CXTPChartAxisCustomLabel* pLabel = new CXTPChartAxisCustomLabel();
+			pLabel->SetAxisValue(str);
+			pLabel->SetText("label");
+			pDiagram->GetAxisX()->GetCustomLabels()->Add(pLabel);
+		}*/
+	}
+}
+
+void CDemoBCGGridDlg::UpdateHistory()
+{
+/*	m_ToolKitChart.Attach(m_wndToolKitChart.GetSafeHwnd());
+	CXTPChartContent* pContent = m_ToolKitChart.GetContent();
+
+	pContent->GetLegend()->SetVisible(TRUE);
+
+	CXTPChartTitle* pTitle = pContent->GetTitles()->Add(new CXTPChartTitle());
+	pTitle->SetText(_T("ToolKit Chart"));
+
+	CXTPChartSeriesCollection* pCollection = pContent->GetSeries();
+	pCollection->RemoveAll();
+
+	CXTPChartSeries* pSeries = pCollection->Add(new CXTPChartSeries());
+	CXTPChartFastLineSeriesStyle* pStyle = new CXTPChartFastLineSeriesStyle();
+	pSeries->SetStyle(pStyle);
+	//pStyle->GetLabel()->SetVisible(1);
+	pStyle->SetAntialiasing(0);				
+	pSeries->SetArgumentScaleType(xtpChartScaleNumerical);
+	CXTPChartDiagram2D* pDiagram = DYNAMIC_DOWNCAST(CXTPChartDiagram2D, pCollection->GetAt(0)->GetDiagram());
+	ASSERT (pDiagram);
+
+	/*pDiagram->SetAllowZoom(FALSE);
+	pDiagram->GetAxisX()->SetAllowZoom(TRUE);
+	pDiagram->GetAxisY()->SetAllowZoom(TRUE);
+	pDiagram->GetAxisY()->GetRange()->SetZoomLimit(10);
+	pDiagram->GetAxisX()->GetRange()->SetAutoRange(0);*/
+/*	CXTPChartAxis* pAxisX = pDiagram->GetAxisX();
+	if (pAxisX)
+	{
+		CXTPChartAxisTitle* pTitle = pAxisX->GetTitle();
+		if (pTitle)
+		{
+			pTitle->SetText("X Axis");
+			pTitle->SetVisible(TRUE);
+		}
+	}
+	CXTPChartAxis* pAxisY = pDiagram->GetAxisY();
+	if (pAxisY)
+	{
+		CXTPChartAxisTitle* pTitle = pAxisY->GetTitle();
+		if (pTitle)
+		{
+			pTitle->SetText("Y Axis");
+			pTitle->SetVisible(TRUE);
+		}
+	}
+	if (pCollection)
+	{
+		AfxMessageBox("MARK");
+		for(int i=0;i<100;i++)
+		{
+			CXTPChartSeries* pSeries = pCollection->GetAt(0);
+			int nCount=0;
+			if (pSeries)
+			{
+				int nValue = 50;
+
+				nCount = pSeries->GetPoints()->GetCount();
+				
+				if (nCount)
+					nValue = (int)pSeries->GetPoints()->GetAt(nCount - 1)->GetValue(0);
+				
+				nValue = nValue + (rand() % 20) - 10;
+				
+				if (nValue < 0) nValue = 0;
+				if (nValue > 100) nValue = 100;
+				
+				pSeries->GetPoints()->Add(new CXTPChartSeriesPoint(nCount, nValue));
+
+			}
+			if (nCount > 100)
+			{
+				CXTPChartAxisRange* pRange = pDiagram->GetAxisX()->GetRange();
+				
+				BOOL bAutoScroll = pRange->GetViewMaxValue() == pRange->GetMaxValue();
+				
+				pRange->SetMaxValue(nCount);
+				
+				if (bAutoScroll)
+				{
+					double delta = pRange->GetViewMaxValue() - pRange->GetViewMinValue();
+					
+					pRange->SetViewAutoRange(FALSE);
+					pRange->SetViewMaxValue(nCount);
+					pRange->SetViewMinValue(nCount - delta);
+				}
+				
+			}
+		}
+	}
+	else
+		AfxMessageBox("err");*/
+	/*if (pCollection)
+	{
+		if (pSeries)
+		{
+			pSeries->SetName(_T("³ÉÌïÈÕÉÏ"));
+			CXTPChartSeriesPointCollection* pPoints = pSeries->GetPoints();
+			if (pPoints)
+			{
+				CXTPChartSeriesPoint* pPoint = NULL;
+				for(int i=0;i<100;i++)
+				{
+					CString str="";
+					str.Format("a-%d",i);
+					pPoint = pPoints->Add(new CXTPChartSeriesPoint(i, rand()%100));
+				}
+			}
+
+			//pSeries->SetStyle(new CXTPChartLineSeriesStyle());
+		}
+	}*/
+
+
+
+	m_ToolKitChart.Attach(m_wndToolKitChart.GetSafeHwnd());	
+	CXTPChartContent* pContent = m_ToolKitChart.GetContent();
+	m_ToolKitChart.GetContent()->SetBackgroundColor(CXTPChartColor(255,255,255,255));
+
+	CXTPChartTitleCollection* pTitles = m_ToolKitChart.GetContent()->GetTitles();
+	CXTPChartTitle* pTitle = pTitles->Add(new CXTPChartTitle());
+	pTitle->SetText(_T("Fast Line"));
+	pTitle->SetTextColor(CXTPChartColor::Black);
+	
+	CXTPChartTitle* pSubTitle = m_ToolKitChart.GetContent()->GetTitles()->Add(new CXTPChartTitle());
+	pSubTitle->SetText(_T("Use mouse wheel to zoom chart"));
+	pSubTitle->SetDocking(xtpChartDockBottom);
+	pSubTitle->SetAlignment(xtpChartAlignFar);
+	pSubTitle->SetFont(CXTPChartFont::GetTahoma8());
+	pSubTitle->SetTextColor(CXTPChartColor::Black);
+
+	
+	CXTPChartSeriesCollection* pCollection = pContent->GetSeries();
+	pCollection->RemoveAll();
+	CXTPChartSeries* pSeries = NULL;
+	if (pCollection)
+	{
+		for (int s = 0; s < 1; s++)
+		{
+			pSeries = pCollection->Add(new CXTPChartSeries());
+			if (pSeries)
+			{
+				pSeries->SetName(_T("Series"));				
+				
+				CXTPChartFastLineSeriesStyle* pStyle = new CXTPChartFastLineSeriesStyle();
+				//pStyle->GetLabel()->SetVisible(0);
+				//pStyle->GetMarker()->SetVisible(0);
+				pSeries->SetStyle(pStyle);
+				
+				pStyle->SetAntialiasing(0);				
+				
+				pSeries->SetArgumentScaleType(xtpChartScaleNumerical);
+			}
+		}
+	}
+	// Set the X and Y Axis title for the series.
+	//CXTPChartDiagram2D* pDiagram = DYNAMIC_DOWNCAST(CXTPChartDiagram2D, pCollection->GetAt(0)->GetDiagram());
+	CXTPChartDiagram2D* pDiagram = (CXTPChartDiagram2D*)pSeries->GetDiagram();
+	ASSERT (pDiagram);
+	pDiagram->GetAxisY()->GetTitle()->SetText(_T("Y Axis"));
+	pDiagram->GetAxisY()->GetTitle()->SetVisible(TRUE);
+	pDiagram->GetAxisY()->SetColor(CXTPChartColor::Black);
+
+	pDiagram->GetAxisX()->GetTitle()->SetText(_T("X Axis"));
+	pDiagram->GetAxisX()->GetTitle()->SetVisible(TRUE);
+	pDiagram->GetAxisX()->SetColor(CXTPChartColor::Black);
+
+	pDiagram->SetAllowZoom(TRUE);
+	
+	pDiagram->GetAxisY()->GetRange()->SetMaxValue(100.1);
+	pDiagram->GetAxisY()->GetRange()->SetAutoRange(FALSE);
+
+	pDiagram->GetAxisY()->GetTitle()->SetText(_T("Y Axis"));
+	pDiagram->GetAxisY()->GetTitle()->SetVisible(TRUE);
+	pDiagram->GetAxisY()->SetColor(CXTPChartColor::Black);
+	pDiagram->GetAxisY()->GetTitle()->SetTextColor(CXTPChartColor::Black);
+	pDiagram->GetAxisY()->GetLabel()->SetTextColor(CXTPChartColor::Black);
+	
+	pDiagram->GetAxisX()->GetRange()->SetMaxValue(100.1);
+	pDiagram->GetAxisX()->GetRange()->SetAutoRange(FALSE);
+	pDiagram->GetAxisX()->GetRange()->SetZoomLimit(10);
+
+	pDiagram->GetAxisX()->GetTitle()->SetText(_T("X Axis"));
+	pDiagram->GetAxisX()->GetTitle()->SetVisible(TRUE);
+	pDiagram->GetAxisX()->SetColor(CXTPChartColor::Black);
+	pDiagram->GetAxisX()->GetTitle()->SetTextColor(CXTPChartColor::Black);
+	pDiagram->GetAxisX()->GetLabel()->SetTextColor(CXTPChartColor::Black);
+	pDiagram->GetAxisX()->SetAllowZoom(FALSE);
+	
+	pDiagram->GetAxisX()->SetInterlaced(FALSE);
+	pDiagram->GetAxisY()->SetInterlaced(FALSE);	
+	
+	pDiagram->GetPane()->GetFillStyle()->SetFillMode(xtpChartFillSolid);
+
+
+
+	for(int i=0;i<1000;i++)
+	{
+		CXTPChartContent* pContent = m_ToolKitChart.GetContent();
+		
+		CXTPChartSeriesCollection* pCollection = pContent->GetSeries();
+		
+		int nCount;
+		
+		if (pCollection)
+		{
+			for (int s = 0; s < pCollection->GetCount(); s++)
+			{
+				CXTPChartSeries* pSeries = pCollection->GetAt(s);
+				if (pSeries)
+				{
+					int nValue = 50;
+					
+					nCount = pSeries->GetPoints()->GetCount();
+					
+					if (nCount)
+						nValue = (int)pSeries->GetPoints()->GetAt(nCount - 1)->GetValue(0);
+					
+					nValue = nValue + (rand() % 20) - 10;
+					
+					if (nValue < 0) nValue = 0;
+					if (nValue > 100) nValue = 100;
+					CString str=_T("");
+					str.Format(_T("a-%d"),i);
+					
+					pSeries->GetPoints()->Add(new CXTPChartSeriesPoint(str, nValue));
+					
+				}
+			}
+		}
+					//CXTPChartAxisCustomLabel* pLabel = new CXTPChartAxisCustomLabel();
+					//pLabel->SetAxisValue(2);
+					//pLabel->SetText("00");
+					//pDiagram->GetAxisX()->GetCustomLabels()->Add(pLabel);
+		
+		CXTPChartDiagram2D* pDiagram = DYNAMIC_DOWNCAST(CXTPChartDiagram2D, 
+			m_ToolKitChart.GetContent()->GetPanels()->GetAt(0));
+		ASSERT (pDiagram);
+		
+		
+		if (nCount > 100)
+		{
+			CXTPChartAxisRange* pRange = pDiagram->GetAxisX()->GetRange();
+			
+			BOOL bAutoScroll = pRange->GetViewMaxValue() == pRange->GetMaxValue();
+			
+			pRange->SetMaxValue(nCount);
+			
+			if (bAutoScroll)
+			{
+				double delta = pRange->GetViewMaxValue() - pRange->GetViewMinValue();
+				
+				pRange->SetViewAutoRange(FALSE);
+				pRange->SetViewMaxValue(nCount);
+				pRange->SetViewMinValue(nCount - delta);
+			}
+			
+		}
+	}
 }

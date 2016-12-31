@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vista", ".\Vista_vc90.vcproj", "{97929118-3348-6449-3575-846168466923}"
+EndProject

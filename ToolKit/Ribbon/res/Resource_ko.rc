@@ -1,0 +1,104 @@
+// Ribbon resource file
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// (c)1998-2011 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#include "Ribbon/Resource.h"
+#include "Ribbon/res/Resource-Neutral.rc"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_RIBBONCUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Quick Access"
+    BEGIN
+        MENUITEM "빠른 실행 도구 모음에서 제거(&R)",               XTP_ID_RIBBONCUSTOMIZE_REMOVE
+        MENUITEM "빠른 실행 도구 모음에 추가(&A)",                    XTP_ID_RIBBONCUSTOMIZE_ADD
+        MENUITEM SEPARATOR
+        MENUITEM "빠른 실행 도구 모음 사용자 지정(&C)...",              XTP_ID_RIBBONCUSTOMIZE
+        MENUITEM "리본 메뉴 아래에 빠른 실행 도구 모음 표시(&S)",     XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSBELOW
+        MENUITEM "리본 메뉴 위에 빠른 실행 도구 모음 표시(&S)",     XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSABOVE
+        MENUITEM SEPARATOR
+        MENUITEM "리본 메뉴 최소화(&N)",              XTP_ID_RIBBONCUSTOMIZE_MINIMIZE
+    END
+END
+
+XTP_IDR_RIBBONCUSTOMIZEMENUMORE MENU DISCARDABLE 
+BEGIN
+    POPUP "Quick Access"
+    BEGIN
+        MENUITEM "빠른 실행 도구 모음 사용자 지정",                 XTP_ID_RIBBONCUSTOMIZE_LABEL
+        MENUITEM "[Commands]",                                      XTP_ID_RIBBONCUSTOMIZE_COMMANDS
+        MENUITEM SEPARATOR
+        MENUITEM "기타 명령(&M)...",                               XTP_ID_RIBBONCUSTOMIZE_MORE
+        MENUITEM "리본 메뉴 아래에 표시(&S)",                          XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSBELOW_MORE
+        MENUITEM "리본 메뉴 위에 표시(&S)",                          XTP_ID_RIBBONCUSTOMIZE_QUICKACCESSABOVE_MORE
+        MENUITEM SEPARATOR
+        MENUITEM "리본 메뉴 최소화(&N)",                            XTP_ID_RIBBONCUSTOMIZE_MINIMIZE
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_RIBBONCUSTOMIZE_QUICKACCESS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "빠른 실행"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "다음에서 명령 선택(&C):",IDC_STATIC,4,5,106,8
+    COMBOBOX        XTP_IDC_RIBBONCOMBO_CATEGORIES,4,15,91,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         XTP_IDC_RIBBONLIST_COMMANDS,4,32,91,101,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "추가(&) >>",XTP_IDC_RIBBONBUTTON_ADD,99,61,31,14
+    PUSHBUTTON      "제거(&R)",XTP_IDC_RIBBONBUTTON_REMOVE,99,78,31,14
+    LISTBOX         XTP_IDC_RIBBONLIST_QUICKACCESS,134,32,91,84,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "원래대로(&S)",XTP_IDC_RIBBONBUTTON_RESET,134,119,52,14
+    CONTROL         "리본 메뉴 아래에 빠른 실행 도구 모음 표시(&P)",
+                    XTP_IDC_RIBBONCHECK_SHOWQUICKACCESSBELOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,136,221,12
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_RIBBONCONTROLQUICKACCESS     "\n신속 액세스 도구 모음 사용자 정의"
+    XTP_ID_RIBBONCONTROLQUICKACCESSMORE "\n기타 컨트롤 "
+    XTP_IDS_RIBBONCUSTOMIZE_CONFIRMRESET "신속 액세스 도구 모음을 기본 내용으로 복원하시겠습니까?"
+END
+
+#endif // !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)

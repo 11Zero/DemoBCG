@@ -82,10 +82,12 @@ BEGIN
     DEFPUSHBUTTON   "确定",IDOK,467,7,50,14
     PUSHBUTTON      "取消",IDCANCEL,467,23,50,14
     CONTROL         "",IDC_GRID_RECT,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
-                    7,7,203,189
+                    7,7,95,71
     CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKFRAME | NOT 
                     WS_VISIBLE,434,49,83,147
-    CONTROL         "",IDC_BCGCHART,"Static",SS_BLACKFRAME,7,7,413,189
+    CONTROL         "",IDC_BCGCHART,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    7,7,132,189
+    CONTROL         "",IDC_TOOLKITCHART,"Static",SS_BLACKFRAME,7,7,420,189
 END
 
 

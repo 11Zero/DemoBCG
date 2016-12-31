@@ -28,17 +28,18 @@ ImplementationFile=DemoBCGGridDlg.cpp
 Filter=D
 BaseClass=CDialog
 VirtualFilter=dWC
-LastObject=IDC_PLACEHOLDER
+LastObject=IDC_TOOLKITCHART
 
 
 
 [DLG:IDD_DEMOBCGGRID_DIALOG]
 Type=1
 Class=CDemoBCGGridDlg
-ControlCount=5
+ControlCount=6
 Control1=IDOK,button,1342242817
 Control2=IDCANCEL,button,1342242816
 Control3=IDC_GRID_RECT,static,1073741831
 Control4=IDC_PLACEHOLDER,static,1073741831
-Control5=IDC_BCGCHART,static,1342177287
+Control5=IDC_BCGCHART,static,1073741831
+Control6=IDC_TOOLKITCHART,static,1342177287
 

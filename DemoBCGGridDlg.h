@@ -15,6 +15,8 @@ class CDemoBCGGridDlg : public CDialog
 {
 // Construction
 public:
+	void UpdateHistory();
+	void CreateToolKitChart();
 	void CreateChart();
 	void CreateGridXTP();
 	void CreateGrid();
@@ -25,6 +27,7 @@ public:
 	enum { IDD = IDD_DEMOBCGGRID_DIALOG };
 	CBCGPChartCtrl	m_wndChart;
 	CStatic	m_wndPlaceHolder;
+	CStatic	m_wndToolKitChart;
 	CStatic	m_wndGridLocation;
 	//}}AFX_DATA
 
@@ -37,6 +40,7 @@ public:
 // Implementation
 protected:
 	HICON m_hIcon;
+	CXTPChartControl m_ToolKitChart;
 	CBCGPGridCtrl		m_wndGrid;
 	CXTPPropertyGrid m_wndPropertyGrid;
 	// Generated message map functions

@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinXP.Royale", ".\WinXP.Royale_vc80.vcproj", "{71945653-5994-4491-2359-919138351294}"
+EndProject

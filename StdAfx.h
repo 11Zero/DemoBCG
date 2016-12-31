@@ -19,8 +19,10 @@
 #ifndef _AFX_NO_AFXCMN_SUPPORT
 #include <afxcmn.h>			// MFC support for Windows Common Controls
 #endif // _AFX_NO_AFXCMN_SUPPORT
-#include <XTToolkitPro.h>
-#include "BCG\BCGCBProInc.h"			// BCGControlBar Pro
+#include "ToolKit/XTToolkitPro.h"
+#pragma comment(lib, "ToolkitPro1501vc60.lib")
+
+#include "BCG/BCGCBProInc.h"			// BCGControlBar Pro
 #pragma comment(lib, "BCGCBPRO2210.lib")
 
 #if _MSC_VER >= 1400
